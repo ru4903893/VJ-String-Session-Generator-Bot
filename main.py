@@ -8,7 +8,7 @@ class Bot(Client):
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
-            plugins=dict(root="TechVJ"),
+            plugins=dict(root="secretexpert"),
             workers=150,
             sleep_threshold=10
         )
@@ -17,7 +17,7 @@ class Bot(Client):
         await super().start()
         me = await self.get_me()
         self.username = '@' + me.username          
-        print('Bot Started Powered By @VJ_Botz')
+        print('Bot Started Powered By @secretexperts')
 
     async def stop(self, *args):
         await super().stop()
